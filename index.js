@@ -492,6 +492,9 @@ class SortableListView extends React.Component {
           enableEmptySections
           {...this.props}
           {...this.state.panResponder.panHandlers}
+
+          renderFooter={this.props.renderFooter}
+
           ref="list"
           dataSource={dataSource}
           onScroll={this.handleScroll}
